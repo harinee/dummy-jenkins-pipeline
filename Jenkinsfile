@@ -1,13 +1,12 @@
     pipeline {
        agent any
       stages {
-                stage('Build ') {
-                    steps {
-                        echo 'build'
-                     }
-                }
-        stage('Pre-deployment') {
-           stage('Code Tests'){
+          stage('Build ') {
+              steps {
+                 echo 'build'
+               }
+          }
+          stage('Code Tests'){
               stages {
                 stage('Unit tests') {
                   steps {
@@ -21,7 +20,6 @@
                 }
               }
            }
-        }
         stage('Deploy test env') {
           steps {
             echo 'Test env ready'
