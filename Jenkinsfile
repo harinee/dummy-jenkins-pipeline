@@ -1,27 +1,28 @@
-    pipeline {
-       agent any
-      stages {
-        stage('Build ') {
-          steps {
-            echo 'build'
-          }
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building'
+            }
         }
         stage('Unit tests') {
-          steps {
-           echo 'unit testing'
-          }
+            steps {
+                echo 'unit test'
+            }
         }
         stage('Integration tests') {
-         steps {
-          echo 'integration testing'
-          }
+            steps {
+                echo 'integration test'
+            }
         }
         stage('Deploy test env') {
-          steps {
-            echo 'Test env ready'
-          }
+            steps {
+                echo 'Test env'
+            }
         }
-        stage('Functional tests') {
+       stage('Functional tests') {
            steps {
              echo 'Functional tests'
            }
@@ -32,6 +33,4 @@
           }
         }
     }
-  }
-
-
+}
