@@ -1,1 +1,1 @@
-A dummy pipeline for reference
+A dummy simple pipeline for reference
