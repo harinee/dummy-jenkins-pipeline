@@ -22,6 +22,11 @@ pipeline {
                 echo 'package'
             }
         }
+        stage('Container Scans') {
+            steps {
+                echo 'package'
+            }
+        }
         stage('Deploy test env') {
             steps {
                 echo 'Test env'
