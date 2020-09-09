@@ -17,6 +17,11 @@ pipeline {
                 echo 'integration test'
             }
         }
+        stage('Package') {
+            steps {
+                echo 'package'
+            }
+        }
         stage('Deploy test env') {
             steps {
                 echo 'Test env'
